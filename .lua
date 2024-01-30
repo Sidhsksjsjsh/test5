@@ -1,4 +1,4 @@
-local st = game.Players.LocalPlayer
+local st = game.Players.LocalPlayer.Name
 
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/NMEHkVTb"))()
 local Window = OrionLib:MakeWindow({Name = "Testing WHITELIST",HidePremium = false,SaveConfig = false,ConfigFolder = "OrionTest"})
@@ -29,7 +29,7 @@ PremiumOnly = false
 
 Tab:AddTextbox({
    Name = "Insert your username",
-   Default = game.Players.LocalPlayer,
+   Default = game.Players.LocalPlayer.Name,
    TextDisappear = false,
    Callback = function(Value)
       _G.input = tostring(Value)
